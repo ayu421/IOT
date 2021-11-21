@@ -1,0 +1,414 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* TO use Box Model  */
+  }
+  
+  body {
+    font-family: "Merriweather", serif;
+    background-color: #ebf2ff;
+  }
+  .newcar{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .button__primary {
+    background-image: linear-gradient(
+      to right,
+      #ebe4e2 0%,
+      #dd2476 51%,
+      #0edd5d 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+  }
+  
+  .navbar__brand {
+    width: 100px;
+  }
+  
+  .navbar__logo {
+    width: 100%;
+  }
+  
+  .nav__item {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .nav__item:hover {
+    border: 2px solid blue;
+  }
+  
+  .hero__image__container {
+    width: 100%;
+  }
+  
+  .hero__image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .hero__text {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  
+  .explore__menu__text {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .food__card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .food__card__image__container {
+    width: 100%;
+  }
+  
+  .food__image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .food__card__description {
+    padding: 15px;
+  }
+  
+  /* Flexxxxxx */
+  .restaurant__text {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .restaurant__images__container {
+    width: 100%;
+  }
+  
+  .restaurant__images__row__one,
+  .restaurant__images__row__two {
+    width: 100%;
+    display: flex;
+    gap: 3px;
+  }
+  
+  .restaurant__images__row__one {
+    align-items: baseline;
+    margin-bottom: 3px;
+  }
+  
+  .restaurant__image__1,
+  .restaurant__image__4 {
+    width: 100%;
+    height: 120px;
+  }
+  
+  .restaurant__image__2,
+  .restaurant__image__3 {
+    width: 120%;
+    height: 200px;
+  }
+  
+  .restaurant__1,
+  .restaurant__2,
+  .restaurant__3,
+  .restaurant__4 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .input__form{
+      align-items: center;
+      font-size: 2.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar {
+      justify-content: space-between;
+      padding: 2px 30px;
+    }
+    .hero__container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+  
+    .explore__menu__lists {
+      margin-top: 40px;
+      display: flex;
+      gap: 15px;
+      padding: 0 30px;
+    }
+  
+    #pizza__card {
+      margin-top: -20px;
+      margin-bottom: 30px;
+    }
+    .explore__menu__container {
+      margin-top: 30px;
+    }
+    .explore__menu__view__more {
+      display: flex;
+      justify-content: center;
+    }
+    .explore__menu__container {
+      position: relative;
+    }
+    .explore__menu__gradient__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      width: 100%;
+      height: 100%;
+  
+    
+    }
+  
+    .restaurant__container{
+      display: flex;
+      align-items: center;
+    }
+    .restaurant__text{
+      width: 100%;
+      font-size: 40px;
+    }
+  }
+  
+  .email__subcribe__container {
+  
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 15px 15px 15px 15px ;
+  margin-right: auto;
+  margin-left: auto;
+  }
+  
+  .email__subcribe__input__field {
+    display: flex;
+    align-items: center;
+  }
+  .text-xl {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    color: #1d3557;
+    font-weight: 900;
+  }
+  
+  
+  .email__input {
+    border: 3px solid black;
+    background-color: #fcedf0;
+    color: black;
+    font-weight: 700;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 4px 4px 4px 4px;
+    
+  
+  }
+  .button__primary{
+    margin: 10px 10px 10px 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 4px 4px 4px 4px ;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .quote__container {
+    position: relative;
+    margin-bottom: 80px;
+    
+    margin-top: 4rem;
+    align-items: center;
+    display: flex ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px 13px 13px 13px;
+    background: url("") center center / cover no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+  
+  }
+  
+  .quote_image_text {
+    color: #fff;
+    z-index: 3;
+    margin: 0px 1rem 0px 1rem;
+    text-align: center;
+  }
+  .quote_image_overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+  .video__footage__container{
+    text-align: center;
+  }
+  .video__footage{
+    align-items: center; 
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: normal;
+  
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem 0 0;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+    
+  }
+  
+  footer > img {
+    width: 300px;
+    filter: brightness(0) invert(1);
+  }
+  footer > ul {
+    margin-top: -1rem;
+    color: #fff;
+  }
+  footer > ul > li {
+    margin: 5px 0 5px 0px;
+  }
+  @media (min-width: 1020px) {
+    .container {
+      max-width: 900px;
+    }
+    .navbar__brand {
+      width: 150px;
+    }
+    .button__primary {
+      padding: 20px;
+      font-size: 20px;
+    }
+    .hero__description {
+      width: 100%;
+    }
+    .hero__text {
+      font-size: 50px;
+    }
+    .explore__menu__lists {
+      gap: 40px;
+    }
+    .explore__menu__text {
+      font-size: 50px;
+    }
+  
+   
+  }
+  
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1250px;
+    }
+  }
+  
+  @media (min-width: 768px){
+  .quote__container {
+    margin-left: 85px;
+    height: 300px;
+    width: 85%;
+  }
+  .email__subcribe__text{
+    font-size: 45px;
+  }
+  }
+  @media (min-width: 768px){
+  .quote_image_overlay {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+  }
+  
+  @media (min-width: 768px){
+  footer {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .email__input{
+    height: 58px;
+    text-align: center;
+  }
+  }
+  
+  @media (min-width: 768px){
+  .email__subcribe__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: center;
+    align-items: normal;
+    justify-content: center;
+  }
+  }
